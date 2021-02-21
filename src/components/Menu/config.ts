@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'http://exchange.goosedefi.com/',
+        href: 'https://swap.koaladefi.finance/',
       },
       {
         label: 'Liquidity',
-        href: 'http://exchange.goosedefi.com/#/pool',
+        href: 'https://swap.koaladefi.finance/#/pool',
       },
     ],
   },
@@ -82,15 +82,15 @@ const config: MenuEntry[] = [
       // },
       {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/koaladefi',
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://doc.koaladefi.finance/',
       },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://medium.com/@koaladefi',
       },
     ],
   },
