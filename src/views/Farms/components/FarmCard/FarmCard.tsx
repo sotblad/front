@@ -167,14 +167,17 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text>{TranslateString(318, 'Earn')}:</Text>
         <Text bold>{earnLabel}</Text>
       </Flex>
-      <Flex justifyContent="space-between" >
+      <Flex justifyContent="space-between">
         <Text>{TranslateString(10001, 'Deposit Fee')}:</Text>
-        <Text bold style={{
-          backgroundColor: farm.depositFeeBP === 0 ? '#4bca4b' : 'transparent',
-          color: farm.depositFeeBP === 0 ? 'white' : '#424f3e',
-          padding: farm.depositFeeBP === 0 ? '2px 5px' : 'inherit',
-          borderRadius: farm.depositFeeBP === 0 ? '10px' : 'inherit',
-        }}>
+        <Text
+          bold
+          style={{
+            backgroundColor: farm.depositFeeBP === 0 ? '#4bca4b' : 'transparent',
+            color: farm.depositFeeBP === 0 ? 'white' : '#424f3e',
+            padding: farm.depositFeeBP === 0 ? '2px 5px' : 'inherit',
+            borderRadius: farm.depositFeeBP === 0 ? '10px' : 'inherit',
+          }}
+        >
           {farm.depositFeeBP / 100}%
         </Text>
       </Flex>
