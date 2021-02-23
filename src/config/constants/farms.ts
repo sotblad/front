@@ -59,7 +59,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xc15fa3e22c912a276550f3e5fe3b0deb87b55acd',
     },
-    tokenSymbol: 'BNB',
+    tokenSymbol: 'USDT',
     tokenAddresses: {
       97: '',
       56: '0x55d398326f99059ff775485246999027b3197955',
