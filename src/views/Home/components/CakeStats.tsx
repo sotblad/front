@@ -27,24 +27,24 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
-  const eggPrice = usePriceCakeBusd()
+  const lyptusPrice = usePriceCakeBusd()
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
   const cakeSupply = getBalanceNumber(circSupply)
-  const marketCap = eggPrice.times(circSupply)
+  const marketCap = lyptusPrice.times(circSupply)
 
-  let eggPerBlock = 0
-  if (farms && farms[0] && farms[0].eggPerBlock) {
-    eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let lyptusPerBlock = 0
+  if (farms && farms[0] && farms[0].lyptusPerBlock) {
+    lyptusPerBlock = new BigNumber(farms[0].lyptusPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Egg Stats')}
+          {TranslateString(534, 'Lyptus Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total EGG Supply')}</Text>
+          <Text fontSize="14px">{TranslateString(536, 'Total LYPTUS Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
@@ -52,13 +52,13 @@ const CakeStats = () => {
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total EGG Burned')}</Text>
+          <Text fontSize="14px">{TranslateString(538, 'Total LYPTUS Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New EGG/block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'New LYPTUS/block')}</Text>
           <Text bold fontSize="14px">
-            {eggPerBlock}
+            {lyptusPerBlock}
           </Text>
         </Row>
       </CardBody>
