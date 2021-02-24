@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Text, BaseLayout } from '@pancakeswap-libs/uikit'
+import { Heading, Text, BaseLayout, Button, AddIcon, LogoRoundIcon, Image } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from './components/FarmStakingCard'
@@ -61,6 +61,12 @@ const Home: React.FC = () => {
           {TranslateString(576, 'Koala DeFi Finance')}
         </Heading>
         <Text>{TranslateString(578, 'High yields BSC farm brought by the Koalas.')}</Text>
+        <hr />
+        <a href="https://swap.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1">
+          <Button variant="subtle">
+            BUY <img src="/images/farms/lyptus.png" alt="LYPTUS Token" width="70" height="70" /> LYPTUS Token Now!
+          </Button>
+        </a>
       </Hero>
       <Countdown />
       <div>

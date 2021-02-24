@@ -116,7 +116,7 @@ const CountdownLabel = styled.span`
   background-color: #41aa29;
   display: block;
   margin: 10px;
-  
+
   ${({ theme }) => theme.mediaQueries.lg} {
     display: inline;
     margin: 0 10px;

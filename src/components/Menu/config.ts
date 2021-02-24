@@ -12,11 +12,13 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://swap.koaladefi.finance/',
+        href:
+          'https://swap.koaladefi.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
       },
       {
         label: 'Liquidity',
-        href: 'https://swap.koaladefi.finance/#/pool',
+        href:
+          'https://swap.koaladefi.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
       },
     ],
   },
