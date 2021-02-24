@@ -114,4 +114,11 @@ const CountdownLabel = styled.span`
   white-space: nowrap;
   --tw-bg-opacity: 1;
   background-color: #41aa29;
+  display: block;
+  margin: 10px;
+  
+  ${({ theme }) => theme.mediaQueries.lg} {
+    display: inline;
+    margin: 0 10px;
+  }
 `
