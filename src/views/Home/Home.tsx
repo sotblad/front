@@ -8,6 +8,7 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
+import Countdown from '../Opening/Countdown'
 
 const Hero = styled.div`
   align-items: center;
@@ -63,6 +64,7 @@ const Home: React.FC = () => {
         </Heading>
         <Text>{TranslateString(578, 'High yields BSC farm brought by the Koalas.')}</Text>
       </Hero>
+      <Countdown />
       <div>
         <Cards>
           <FarmStakingCard />
