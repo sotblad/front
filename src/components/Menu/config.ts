@@ -88,7 +88,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Blog',
-        href: 'https://medium.com/@koaladefi',
+        href: 'https://koaladefi.medium.com/',
       },
     ],
   },
