@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Link, useRouteMatch } from 'react-router-dom'
 import moment from 'moment/moment'
+import { Image } from '@pancakeswap-libs/uikit'
 
 const Countdown = () => {
   const openingDate2 = moment('2021-03-01T10:00:00Z')
@@ -54,11 +54,16 @@ const Countdown = () => {
       <hr />
       <p>
         <strong>
-          Read the{' '}
           <a href="https://koaladefi.medium.com/launch-announcement-95676a357cf9" target="_blank" rel="noreferrer">
-            Announcement ↠
+            Read the Announcement ↠
           </a>
         </strong>
+      </p>
+      <hr />
+      <p>
+        <a href="https://twitter.com/KoalaDefi/status/1365255264484659201" target="_blank" rel="noreferrer">
+          <Image src="/images/koala/airdrop-website-01.png" alt="Airdrop" width={1934} height={376} responsive />
+        </a>
       </p>
     </CountdownContainer>
   )
