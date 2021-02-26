@@ -20,12 +20,6 @@ const Hero = styled.div`
   margin: auto;
   margin-bottom: 32px;
   text-align: center;
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
-    background-position: left center, right center;
-    height: 165px;
-    padding-top: 0;
-  }
 `
 
 const Cards = styled(BaseLayout)`
