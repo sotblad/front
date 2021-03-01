@@ -51,13 +51,12 @@ export const useBurnedBalance = (tokenAddress: string) => {
 
   useEffect(() => {
     const fetchBalance = async () => {
-      const res = await getTokenBalance(ethereum, tokenAddress, '0x000000000000000000000000000000000000dEaD')
-      setBalance(new BigNumber(res))
+      const cakeContract = getContract(cakeABI, getCakeAddress())
+      const bal = await cakeContract.methods.balanceOf('0x000000000000000000000000000000000000dEaD').call()
+      setBalance(new BigNumber(bal))
     }
 
-    if (account && ethereum) {
-      fetchBalance()
-    }
+    fetchBalance()
   }, [account, ethereum, tokenAddress, slowRefresh])
 
   return balance
