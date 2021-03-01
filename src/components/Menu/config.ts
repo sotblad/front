@@ -55,6 +55,18 @@ const config: MenuEntry[] = [
         label: 'PancakeSwap',
         href: 'https://pancakeswap.info/token/0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
       },
+      {
+        label: 'Token',
+        href: 'https://doc.koaladefi.finance/tokennomics/lyptus-token',
+      },
+      {
+        label: 'Contracts',
+        href: 'https://doc.koaladefi.finance/security/contracts',
+      },
+      {
+        label: 'Transparency',
+        href: 'https://doc.koaladefi.finance/transparency/transparency',
+      },
       // {
       //   label: 'CoinGecko',
       //   href: 'https://www.coingecko.com/en/coins/koalatoken',
@@ -89,6 +101,14 @@ const config: MenuEntry[] = [
       {
         label: 'Blog',
         href: 'https://koaladefi.medium.com/',
+      },
+      {
+        label: 'Announcements',
+        href: 'https://t.me/koaladefi',
+      },
+      {
+        label: 'Telegram',
+        href: 'https://t.me/koaladefichat',
       },
     ],
   },
