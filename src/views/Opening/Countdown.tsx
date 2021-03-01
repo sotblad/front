@@ -59,12 +59,6 @@ const Countdown = () => {
           </a>
         </strong>
       </p>
-      <hr />
-      <p>
-        <a href="https://twitter.com/KoalaDefi/status/1365255264484659201" target="_blank" rel="noreferrer">
-          <Image src="/images/koala/airdrop-website-01.png" alt="Airdrop" width={1934} height={376} responsive />
-        </a>
-      </p>
     </CountdownContainer>
   )
 }

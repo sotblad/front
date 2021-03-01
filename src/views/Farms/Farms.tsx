@@ -16,7 +16,6 @@ import useI18n from 'hooks/useI18n'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
-import Countdown from '../Opening/Countdown'
 
 export interface FarmsProps {
   tokenMode?: boolean
@@ -96,7 +95,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
         {TranslateString(10000, 'Deposit Fee will be used to buyback LYPTUS')}
       </Heading>
-      <Countdown />
       <FarmTabButtons />
       <div>
         <Divider />
