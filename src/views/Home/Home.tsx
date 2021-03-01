@@ -4,11 +4,10 @@ import { Heading, Text, BaseLayout, Button, AddIcon, LogoRoundIcon, Image } from
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from './components/FarmStakingCard'
-import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
-import Countdown from '../Opening/Countdown'
+import ListedOn from './components/ListedOn'
 
 const Hero = styled.div`
   align-items: center;
@@ -75,6 +74,7 @@ const Home: React.FC = () => {
           <TwitterCard />
           <CakeStats />
           <TotalValueLockedCard />
+          <ListedOn />
         </Cards>
       </div>
     </Page>
