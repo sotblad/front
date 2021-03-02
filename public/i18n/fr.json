@@ -993,7 +993,7 @@
     {
       "data": {
         "stringId": 658,
-        "text": "Details"
+        "text": "Détails"
       }
     },
     {
@@ -1197,13 +1197,37 @@
     {
       "data": {
         "stringId": 728,
-        "text": "In Wallet"
+        "text": "En portefeuille"
+      }
+    },
+    {
+      "data": {
+        "stringId": 729,
+        "text": "Gagné(s)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 730,
+        "text": "Déposé(s)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 731,
+        "text": "Valeur total vérouillée (TVL)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 732,
+        "text": "Dans toutes les fermes et pools"
       }
     },
     {
       "data": {
         "stringId": 10000,
-        "text": "Deposit Fee will be used to buyback LYPTUS"
+        "text": "Les frais de dépôt seront utilisés pour racheter des LYPTUS"
       }
     },
     {

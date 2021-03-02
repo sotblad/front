@@ -65,7 +65,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
       />
     ) : (
       <Button mt="8px" fullWidth disabled={requestedApproval} onClick={handleApprove}>
-        {TranslateString(999, 'Approve Contract')}
+        {TranslateString(564, 'Approve Contract')}
       </Button>
     )
   }
@@ -78,7 +78,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
           LYPTUS
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-          {TranslateString(999, 'Earned')}
+          {TranslateString(729, 'Earned')}
         </Text>
       </Flex>
       <HarvestAction earnings={earnings} pid={pid} />
@@ -87,7 +87,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
           {lpName}
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-          {TranslateString(999, 'Staked')}
+          {TranslateString(730, 'Staked')}
         </Text>
       </Flex>
       {!account ? <UnlockButton mt="8px" fullWidth /> : renderApprovalOrStakeButton()}

@@ -1202,6 +1202,30 @@
     },
     {
       "data": {
+        "stringId": 729,
+        "text": "Earned"
+      }
+    },
+    {
+      "data": {
+        "stringId": 730,
+        "text": "Staked"
+      }
+    },
+    {
+      "data": {
+        "stringId": 731,
+        "text": "Total Value Locked (TVL)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 732,
+        "text": "Across all Farms and Pools"
+      }
+    },
+    {
+      "data": {
         "stringId": 10000,
         "text": "Deposit Fee will be used to buyback LYPTUS"
       }
