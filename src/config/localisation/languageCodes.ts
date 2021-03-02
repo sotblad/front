@@ -40,7 +40,7 @@ export const allLanguages = [
   // NL,
   // FIL,
   // FI,
-  // FR,
+  FR,
   // EL,
   // HI,
   // HU,
