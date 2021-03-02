@@ -19,6 +19,47 @@ const BalanceAndCompound = styled.div`
   flex-direction: column;
 `
 
+const CompoundButton = styled(Button)`
+  position: relative;
+  width: 100%;
+
+  p {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:disabled {
+    span {
+      display: none;
+    }
+  }
+`
+
+const CompoundButtonBg = styled.span`
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #41aa29, #6eff00);
+  pointer-events: none;
+  animation: animate 10s linear infinite;
+  z-index: 0;
+
+  @keyframes animate {
+    0% {
+      filter: blur(10px) opacity(0.3);
+    }
+    50% {
+      filter: blur(15px) opacity(1);
+    }
+    100% {
+      filter: blur(10px) opacity(0.3);
+    }
+  }
+`
+
 const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const TranslateString = useI18n()
   const [pendingTx, setPendingTx] = useState(false)
@@ -32,11 +73,9 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
     <Flex mb="8px" justifyContent="space-between" alignItems="center">
       <Heading color={rawEarningsBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
       <BalanceAndCompound>
-        {pid === 12 ? (
-          <Button
+        {pid === 0 ? (
+          <CompoundButton
             disabled={rawEarningsBalance === 0 || pendingTx}
-            size="sm"
-            variant="secondary"
             marginBottom="15px"
             onClick={async () => {
               setPendingTx(true)
@@ -44,8 +83,9 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
               setPendingTx(false)
             }}
           >
-            {TranslateString(999, 'Compound')}
-          </Button>
+            <p>{TranslateString(999, 'Compound')}</p>
+            <CompoundButtonBg />
+          </CompoundButton>
         ) : null}
         <Button
           disabled={rawEarningsBalance === 0 || pendingTx}
